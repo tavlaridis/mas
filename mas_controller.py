@@ -11,8 +11,8 @@ switches
 
 Pipeline for one alert (FR1 / FR3):
 
-    Alert Terminal --(coded IP:port)--> Alert Switch
-        controller decodes  IP -> beacons,  port, terminal
+    Alert Terminal --(coded IP:port) > Alert Switch
+        controller decodes  IP > beacons,  port, terminal
         controller rewrites src=254.254.254.254 dst=253.253.253.253 dport=1
         controller forwards the rewritten packet over the AS to beacon link
     Beacon Switch --(254.254.254.254 -> 253.253.253.253:1)--> Terminal
