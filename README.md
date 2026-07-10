@@ -78,7 +78,3 @@ at echo "ALL CLEAR" | nc -u -w0 77.77.77.77 7777
 # Listen for an alert on any terminal host
 b1t2 tcpdump udp port 1 -A
 ```
-
-## License
-
-MIT
